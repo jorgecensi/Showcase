@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
+﻿
 using Foundation;
 using UIKit;
 
@@ -23,7 +20,10 @@ namespace Showcase.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
+            LoadApplication(new Showcase.Application());
 
             return base.FinishedLaunching(app, options);
         }

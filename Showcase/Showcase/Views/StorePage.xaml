@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:base="clr-namespace:Showcase;assembly=Showcase"
+			 x:Class="Showcase.Views.StorePage">
+	<ContentPage.Content>
+		<ScrollView>
+			<ListView 
+				HasUnevenRows="True"
+				ItemsSource="{Binding Products}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout Padding="20, 30" Orientation="Vertical">
+								<Label Text="{Binding Name}"
+								 FontSize="Large"                   
+															 TextColor="#FF5525"/>
+
+								<Label Text="{Binding Description}"
+									FontSize="Small" />
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+
+		</ScrollView>
+	</ContentPage.Content>
+</base:BasePage>

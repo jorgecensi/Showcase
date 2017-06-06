@@ -1,19 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
+using Showcase.Views;
 using Xamarin.Forms;
 
 namespace Showcase
 {
-    public partial class App : Application
+    public partial class Application : Xamarin.Forms.Application
     {
-        public App()
+        public Application()
         {
             InitializeComponent();
 
-            MainPage = new Showcase.MainPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

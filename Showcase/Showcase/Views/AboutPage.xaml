@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base:BasePage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:base="clr-namespace:Showcase;assembly=Showcase"  
+             x:Class="Showcase.Views.AboutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Maratona Xamarin!" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="Autor: Jorge Luis Censi" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage.Content>
+</base:BasePage>
